@@ -1,39 +1,37 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
+import java.util.Scanner;
 public class Main
 {
 	public static void main(String[] args) {
-		char eduardo = 'e';
-		char caio = 'c';
-		System.out.println(eduardo > caio);
-		System.out.println(true);
-		int idadelucas = 19;
-		int idadeeduardo = 15;
-		System.out.println(idadelucas > idadeeduardo);
-		System.out.println(true);
-		boolean chovendo = true;
-		boolean relampagos = false;
-		if (chovendo||relampagos) {
-		    System.out.println("não irei sair de casa");
-		}
-		else {
-		    System.out.println("irei sair de casa");
-		}
-		boolean strogonoff = true;
-		boolean macarrao = true;
-		if (strogonoff || macarrao){
-		    System.out.println("ficarei muito feliz");
-		}
-		else {
-		    System.out.println("nao ficarei nada feliz");
-		}
+		System.out.println("aula 2");
+		Scanner entrada = new Scanner(System.in);
+		double hamburguer = 18.00;
+		double refrigerante = 8.00;
+		double batata_frita = 12.00;
+		double nuggets = 10.00;
+		System.out.println("peça uma coisa do cardapio: 1-hamburguer, 2-refri, 3-batata, 4-nuggets");
+		
+		int pedido = entrada.nextInt();
+		
+		
+		System.out.print("quantas unidades você quer?");
+		double quantidade = entrada.nextDouble();
+		
+		double carteira = 20.00;
+		
+		
+		
+		
+		if(hamburguer<carteira){
+		    System.out.println("compra bem sucedida!");
+		    System.out.println("sobrou dinhiro");
+		
+		} else if(hamburguer==carteira){
+		    System.out.println("compre bem sucedida!");
+		    System.out.println("zerei");
+		    }else{
+		        System.out.println("naum vai cume!");
+		    }
+		
+		
 	}
-}	
-	
-
+}
